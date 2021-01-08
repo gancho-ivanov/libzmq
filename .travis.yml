@@ -143,7 +143,7 @@ matrix:
         - abi-dumper
         - abi-compliance-checker
   - name: Linux ARM64
-    env: BUILD_TYPE=default CURVE=tweetnacl GSSAPI=enabled PGM=enabled NORM=enabled TIPC=enabled IPv6=ON TLS=enabled DRAFT=enabled
+    env: BUILD_TYPE=default CURVE=tweetnacl GSSAPI=enabled PGM=enabled NORM=enabled IPv6=ON TLS=enabled DRAFT=enabled
     os: linux
     dist: bionic
     arch: arm64
