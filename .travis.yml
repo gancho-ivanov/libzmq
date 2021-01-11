@@ -22,12 +22,9 @@ matrix:
           - libpgm-dev
           - libgnutls28-dev
 
+  allow_failures:
+    - arch: arm64
+
+
 # Build and check this project according to the BUILD_TYPE
 script: ./ci_build.sh
-
-allow_failures:
-   - name: Linux ARM64
-     env: BUILD_TYPE=default CURVE=tweetnacl GSSAPI=enabled PGM=enabled NORM=enabled IPv6=ON TLS=enabled DRAFT=enabled
-     os: linux
-     dist: focal
-     arch: arm64
